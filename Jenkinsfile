@@ -4,10 +4,8 @@ pipeline {
     stage('build') {
       steps {
         echo 'build completed'
-        timeout(time: 5, activity: true) {
-          sleep 10
-        }
-
+        sleep 10
+        timeout(time: 5, activity: true)
       }
     }
 
